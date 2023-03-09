@@ -98,6 +98,7 @@ const displayPhoneDetails = phone => {
     <p>Release Date: ${phone.releaseDate ? phone.releaseDate : 'No Release Date Found'}</p>
     <p>Storage: ${phone.mainFeatures ? phone.mainFeatures.storage : 'No Storage Information'}</p>
     <p>Others: ${phone.others ? phone.others.Bluetooth : 'No Bluetooth Information'}</p>
+    <p>Sensor: ${phone.mainFeatures.sensors ? phone.mainFeatures.sensors[0] : 'no sensor'}</p>
   `
 }
 
@@ -105,13 +106,7 @@ loadPhones('apple');
 
 
 
-
-
-
-
-
-
-
+/* >>=====================================FULL MODULE SUMMARY =========================================>> */
 /*
 FETCH 
 1. Fetch must provide url
@@ -125,5 +120,20 @@ users:
 ---> object with a property called data
 
 nested object
+
+
+---------------
+DOM manipulation
+1. get something from the DOM
+2. create element to append to the DOM
+3. dynamically load data based on id
+
+
+-----------
+array --> forEach, map, find, filter
+
+---------------
+template string
+
 
  */
